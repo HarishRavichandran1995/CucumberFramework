@@ -4,6 +4,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 
+import com.dlh.utilities.CommonUtils;
+import com.lao.constants.Constants;
+
 import io.cucumber.java.Before;
 
 public class Common_Step_Def {
@@ -13,6 +16,7 @@ public class Common_Step_Def {
 	@Before
 	public void beforeScenario() {
 		try {
+			CommonUtils.loadProperties();
 			if(driver==null) {
 			launchBrowser();} 
 		} catch (Exception e) {
@@ -22,22 +26,19 @@ public class Common_Step_Def {
 	
 	public void launchBrowser() {
 		try {
-			switch ("browserChosen") {
+			switch (Constants.BROWSER) {
 			case "chrome":
-				System.setProperty("webdriver.chrome.driver", 
-				        "C:\\Users\\haris\\Downloads\\driver1\\chromedriver.exe");
+				System.setProperty(Constants.CHROME_DRIVER, Constants.CHROME_DRIVER_LOCATION);
 				driver = new ChromeDriver();
 				break;
 				
 			case "edge":
-				System.setProperty("webdriver.edge.driver", 
-				        "C:\\Users\\haris\\Downloads\\driver1\\msedgedriver.exe");
+				System.setProperty(Constants.EDGE_DRIVER,Constants.EDGE_DRIVER_LOCATION);
 				driver = new EdgeDriver();
 				break;
 
 			default:
-				System.setProperty("webdriver.chrome.driver", 
-				        "C:\\Users\\haris\\Downloads\\driver1\\chromedriver.exe");
+				System.setProperty(Constants.CHROME_DRIVER, Constants.CHROME_DRIVER_LOCATION);
 				driver = new ChromeDriver();
 				break;
 			}
