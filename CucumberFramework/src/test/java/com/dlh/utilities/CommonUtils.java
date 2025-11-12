@@ -5,22 +5,21 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.openqa.selenium.support.PageFactory;
+
+import com.dlh.pageobjects.DirectoryPage;
+import com.dlh.pageobjects.HomePage;
+import com.dlh.pageobjects.LoginPage;
+import com.dlh.webdriver_manager.DriverManager;
 import com.lao.constants.Constants;
 
 public class CommonUtils {
 	
-	public static void loadProperties() {
-		FileReader fileReader = null;
-		try {
-			fileReader = new FileReader("config.properties");
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+	public void loadProperties() {
 		
 		Properties properties = new Properties();
 		try {
-			properties.load(fileReader);
+			properties.load(getClass().getResourceAsStream("/config.properties"));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -31,6 +30,12 @@ public class CommonUtils {
 		Constants.PASSWORD =properties.getProperty("password");
 		Constants.CHROME_DRIVER_LOCATION =properties.getProperty("CHROME_DRIVER_LOCATION");
 		Constants.EDGE_DRIVER_LOCATION =properties.getProperty("EDGE_DRIVER_LOCATION");
+	}
+	
+	public void initElements() {
+		PageFactory.initElements(DriverManager.getDriver(), LoginPage.getInstance());
+		PageFactory.initElements(DriverManager.getDriver(), HomePage.getInstance());
+		PageFactory.initElements(DriverManager.getDriver(), DirectoryPage.getInstance());
 	}
 
 }
