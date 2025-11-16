@@ -3,6 +3,8 @@ package com.dlh.pageobjects;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import com.dlh.utilities.CommonUtils;
+
 public class LoginPage {
 	
 	private static LoginPage loginPage;
@@ -26,13 +28,26 @@ public class LoginPage {
 	@FindBy(xpath = "//button[@type='submit']" )
 	private  WebElement SUBMIT;
 	
-	public WebElement getUSERNAME() {
-		return USERNAME;
+	public void enterUserName(String username) {
+		CommonUtils.getInstance().highlightWebElement(USERNAME);
+		USERNAME.sendKeys(username);
 	}
-	public WebElement getPASSWORD() {
-		return PASSWORD;
+	
+	public void enterPassword(String password) {
+		CommonUtils.getInstance().highlightWebElement(PASSWORD);
+		PASSWORD.sendKeys(password);
 	}
-	public WebElement getSUBMIT() {
-		return SUBMIT;
+	
+	public void clickSubmit() {
+		CommonUtils.getInstance().highlightWebElement(SUBMIT);
+		SUBMIT.click();
 	}
+	
+	
+	
+	/*
+	 * public WebElement getUSERNAME() { return USERNAME; } public WebElement
+	 * getPASSWORD() { return PASSWORD; } public WebElement getSUBMIT() { return
+	 * SUBMIT; }
+	 */
 }

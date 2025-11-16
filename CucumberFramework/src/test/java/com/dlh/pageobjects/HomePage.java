@@ -3,6 +3,8 @@ package com.dlh.pageobjects;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import com.dlh.utilities.CommonUtils;
+
 public class HomePage {
 	
 	private static HomePage homePage;
@@ -20,8 +22,23 @@ public class HomePage {
 	
 	@FindBy(linkText = "Directory")
 	private WebElement DIRECTORY;
-
-	public WebElement getDIRECTORY() {
-		return DIRECTORY;
+	
+	@FindBy(linkText = "Time")
+	private WebElement TIMESHEET;
+	
+	
+	
+	public void clickDirectory() {
+		CommonUtils.getInstance().highlightWebElement(DIRECTORY);
+		DIRECTORY.click();
 	}
+	
+	public void clickTimesheet() {
+		CommonUtils.getInstance().highlightWebElement(TIMESHEET);
+		TIMESHEET.click();
+	}
+
+	/*
+	 * public WebElement getDIRECTORY() { return DIRECTORY; }
+	 */
 }

@@ -11,22 +11,29 @@ import com.dlh.webdriver_manager.DriverManager;
 import com.lao.constants.Constants;
 
 import io.cucumber.java.Before;
+import io.cucumber.java.Scenario;
 
 public class Common_Step_Def {
     private static final Logger LOGGER = LogManager.getLogger(Common_Step_Def.class);
+	private static String scenarioName = null;
+	public static String getScenarioName() {
+		return scenarioName;
+	}
+	
 	
 	@Before
-	public void beforeScenario(){
+	public void beforeScenario(Scenario scenario) {
 		try {
+			scenarioName = scenario.getName();
 			LOGGER.info("Starting beforeScenario setup...");
-			CommonUtils commonUtils = new CommonUtils();
-			commonUtils.loadProperties();
+			
+			CommonUtils.getInstance().loadProperties();;
 			LOGGER.info("Properties loaded successfully.");
 
 			if(DriverManager.getDriver() == null) {
 				LOGGER.info("Driver is null — launching browser...");
 				DriverManager.launchBrowser();
-				commonUtils.initElements();
+				CommonUtils.getInstance().initElements();
 			} else {
 				LOGGER.info("Driver already initialized — skipping browser launch.");
 			}
