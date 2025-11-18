@@ -18,8 +18,11 @@ public class TimeSheetPage {
 		return timeSheetPage;
 	}
 
-	@FindBy(xpath = "//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div[1]/form/div[1]/div/div/div/div[2]/div/div/input")
+	@FindBy(xpath = "//input[contains(@placeholder,'Type for hints')]")
 	private WebElement TIMESHEET;
+	
+	@FindBy(xpath = "//div[@role = 'listbox']")
+	private WebElement selectValueFmDropdown;
 	
 	@FindBy(xpath = "//*[@type='submit']")
 	private WebElement SUBMIT;
@@ -30,6 +33,10 @@ public class TimeSheetPage {
 	
 	public void enterTimesheet(String name) {
 		TIMESHEET.sendKeys(name);
+	}
+	
+	public void enterValue() {
+		selectValueFmDropdown.click();
 	}
 	
 	public void clickSubmit() {

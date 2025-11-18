@@ -53,6 +53,9 @@ public class VerifyPendingTimeSheets_Step_Def {
         	Thread.sleep(3000);
         	TimeSheetPage.getInstance().clickNameTextBox();
         	TimeSheetPage.getInstance().enterTimesheet(empName);
+        	Thread.sleep(3000);
+        	TimeSheetPage.getInstance().enterValue();
+        	
 			LOGGER.info("the user enters the name as Thomas Kutty Benny");	
 		} catch (Exception e) {
 			// TODO: handle exception

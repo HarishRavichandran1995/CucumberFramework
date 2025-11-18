@@ -51,9 +51,13 @@ public class DirectoryPage {
 		CommonUtils.getInstance().highlightWebElement(FETCHNAME);
 		return FETCHNAME.getText();
 	}
+	
+	public WebElement getJOBTITLEDROPDOWN() { 
+		return JOBTITLEDROPDOWN; 
+		}
 
 	/*
-	 * public WebElement getJOBTITLEDROPDOWN() { return JOBTITLEDROPDOWN; }
+	 * 
 	 * 
 	 * public WebElement getJOBTITLE() { return JOBTITLE; }
 	 * 
