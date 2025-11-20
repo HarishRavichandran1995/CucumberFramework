@@ -20,6 +20,8 @@ import org.openqa.selenium.support.ui.Select;
 import com.dlh.pageobjects.DirectoryPage;
 import com.dlh.pageobjects.HomePage;
 import com.dlh.pageobjects.LoginPage;
+import com.dlh.pageobjects.TimeSheetPage;
+import com.dlh.pageobjects.ViewTimeSheetPage;
 import com.dlh.step_definitions.Common_Step_Def;
 import com.dlh.webdriver_manager.DriverManager;
 import com.lao.constants.Constants;
@@ -59,6 +61,8 @@ public class CommonUtils {
 		PageFactory.initElements(DriverManager.getDriver(), LoginPage.getInstance());
 		PageFactory.initElements(DriverManager.getDriver(), HomePage.getInstance());
 		PageFactory.initElements(DriverManager.getDriver(), DirectoryPage.getInstance());
+		PageFactory.initElements(DriverManager.getDriver(), TimeSheetPage.getInstance());
+		PageFactory.initElements(DriverManager.getDriver(), ViewTimeSheetPage.getInstance());
 	}
 	
 	public void takeScreenshot() {

@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 
+import com.dlh.pageobjects.LoginPage;
 import com.dlh.utilities.CommonUtils;
 import com.dlh.webdriver_manager.DriverManager;
 import com.lao.constants.Constants;
@@ -34,6 +35,8 @@ public class Common_Step_Def {
 				LOGGER.info("Driver is null — launching browser...");
 				DriverManager.launchBrowser();
 				CommonUtils.getInstance().initElements();
+				login();
+				LOGGER.info("Browser launched and user logged in successfully.");
 			} else {
 				LOGGER.info("Driver already initialized — skipping browser launch.");
 			}
@@ -45,5 +48,13 @@ public class Common_Step_Def {
 	}
 	public void afterScenario() {
 		LOGGER.info("Executing afterScenario...");
+	}
+	
+	public void login() throws InterruptedException {
+		LOGGER.info("Executing login...");
+		DriverManager.getDriver().get(Constants.APP_URL);
+			LoginPage.getInstance().enterUserName(Constants.USERNAME);
+			LoginPage.getInstance().enterPassword(Constants.PASSWORD);
+			LoginPage.getInstance().clickSubmit();
 	}
 }

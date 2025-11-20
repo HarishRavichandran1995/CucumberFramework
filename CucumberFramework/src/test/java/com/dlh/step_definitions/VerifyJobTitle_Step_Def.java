@@ -2,6 +2,7 @@ package com.dlh.step_definitions;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -22,17 +23,12 @@ public class VerifyJobTitle_Step_Def {
 	
 	@Given("the user is logged in successfully and is on Home Page")
     public void the_user_is_logged_in_successfully_and_is_on_home_page() {
-		DriverManager.getDriver().get(Constants.APP_URL);
 		try {
-			Thread.sleep(3000);
-			LoginPage.getInstance().enterUserName(Constants.USERNAME);
-			LoginPage.getInstance().enterPassword(Constants.PASSWORD);
-			LoginPage.getInstance().clickSubmit();
 			String url = DriverManager.getDriver().getCurrentUrl();
 			if(url.contains("dashboard")) {
 				LOGGER.info("User is logged on successfully and is on Home Page");
 			}
-		} catch (InterruptedException e) {
+		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			CommonUtils.getInstance().takeScreenshot();
 			LOGGER.error("Error while logging in: " + e.getMessage());
@@ -83,12 +79,13 @@ public class VerifyJobTitle_Step_Def {
     public void the_user_should_see_the_emp_name_as(String empName) {
     	LOGGER.info("the user should see the job title for Emp as {string}");
     	try {
-			//Thread.sleep(3000);
+			Thread.sleep(3000);
 			String actualName = DirectoryPage.getInstance().fetchName();
 	    	if (actualName.equals(empName)) {
 	    		LOGGER.info("EMP Name matches");
 		} }catch (Exception e) {
 			// TODO Auto-generated catch block
+			Assert.fail(e.getMessage());
 			CommonUtils.getInstance().takeScreenshot();
 			LOGGER.error("Error while fetching emp name: " + e.getMessage());
 		}

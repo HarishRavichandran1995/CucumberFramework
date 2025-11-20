@@ -32,6 +32,7 @@ public class TimeSheetPage {
 	}
 	
 	public void enterTimesheet(String name) {
+		TIMESHEET.clear();
 		TIMESHEET.sendKeys(name);
 	}
 	

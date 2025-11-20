@@ -2,6 +2,7 @@ package com.dlh.step_definitions;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.junit.Assert;
 
 import com.dlh.pageobjects.HomePage;
 import com.dlh.pageobjects.LoginPage;
@@ -48,9 +49,9 @@ public class VerifyPendingTimeSheets_Step_Def {
     }
 
     @When("the user enters the name as {string}")
-    public void the_user_enters_the_name_as(String empName) {
-        try {
-        	Thread.sleep(3000);
+    public void the_user_enters_the_name_as(String empName) throws InterruptedException {
+    	try {
+    		Thread.sleep(3000);
         	TimeSheetPage.getInstance().clickNameTextBox();
         	TimeSheetPage.getInstance().enterTimesheet(empName);
         	Thread.sleep(3000);
