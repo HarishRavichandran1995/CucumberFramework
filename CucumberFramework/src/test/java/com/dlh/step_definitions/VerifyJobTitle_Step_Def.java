@@ -30,7 +30,7 @@ public class VerifyJobTitle_Step_Def {
 			}
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
-			CommonUtils.getInstance().takeScreenshot();
+			//CommonUtils.getInstance().takeScreenshot();
 			LOGGER.error("Error while logging in: " + e.getMessage());
 		}	
     }
@@ -43,7 +43,7 @@ public class VerifyJobTitle_Step_Def {
 	    	LOGGER.info("the user clicks on the directory option from the Menu bar");
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
-			CommonUtils.getInstance().takeScreenshot();
+			//CommonUtils.getInstance().takeScreenshot();
 			LOGGER.error("Error while clicking on directory option: " + e.getMessage());
 		}
     	}
@@ -58,7 +58,7 @@ public class VerifyJobTitle_Step_Def {
 			DirectoryPage.getInstance().selectJobTitle();
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
-			CommonUtils.getInstance().takeScreenshot();
+			//CommonUtils.getInstance().takeScreenshot();
 			LOGGER.error("Error while selecting job title from dropdown: " + e.getMessage());
 		}
     }
@@ -69,7 +69,7 @@ public class VerifyJobTitle_Step_Def {
     		LOGGER.info("clicks the search button");
         	DirectoryPage.getInstance().clickSearchButton();
 		} catch (Exception e) {
-			CommonUtils.getInstance().takeScreenshot();
+			//CommonUtils.getInstance().takeScreenshot();
 			LOGGER.error("Error while clicking search button: " + e.getMessage());
 		}
     	
@@ -86,7 +86,7 @@ public class VerifyJobTitle_Step_Def {
 		} }catch (Exception e) {
 			// TODO Auto-generated catch block
 			Assert.fail(e.getMessage());
-			CommonUtils.getInstance().takeScreenshot();
+			//CommonUtils.getInstance().takeScreenshot();
 			LOGGER.error("Error while fetching emp name: " + e.getMessage());
 		}
     }

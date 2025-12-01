@@ -1,312 +1,80 @@
-2025-11-19 20:33:03 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Starting beforeScenario setup...
-2025-11-19 20:33:03 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Properties loaded successfully.
-2025-11-19 20:33:03 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Driver is null — launching browser...
-2025-11-19 20:33:03 [INFO ] com.dlh.webdriver_manager.DriverManager [main] Launching browser: chrome
-2025-11-19 20:33:05 [INFO ] io.github.bonigarcia.wdm.WebDriverManager [main] Using chromedriver 142.0.7444.175 (resolved driver for Chrome 142)
-2025-11-19 20:33:05 [INFO ] io.github.bonigarcia.wdm.WebDriverManager [main] Exporting webdriver.chrome.driver as C:\Users\haris\.cache\selenium\chromedriver\win64\142.0.7444.175\chromedriver.exe
-2025-11-19 20:33:07 [INFO ] com.dlh.webdriver_manager.DriverManager [main] Chrome browser launched successfully.
-2025-11-19 20:33:15 [INFO ] com.dlh.step_definitions.VerifyJobTitle_Step_Def [main] User is logged on successfully and is on Home Page
-2025-11-19 20:33:19 [INFO ] com.dlh.step_definitions.VerifyJobTitle_Step_Def [main] the user clicks on the directory option from the Menu bar
-2025-11-19 20:33:19 [INFO ] com.dlh.step_definitions.VerifyJobTitle_Step_Def [main] the user selects job title as CFO from the drop down
-2025-11-19 20:33:25 [INFO ] com.dlh.step_definitions.VerifyJobTitle_Step_Def [main] clicks the search button
-2025-11-19 20:33:25 [INFO ] com.dlh.step_definitions.VerifyJobTitle_Step_Def [main] the user should see the job title for Emp as {string}
-2025-11-19 20:33:26 [ERROR] com.dlh.step_definitions.VerifyJobTitle_Step_Def [main] Error while fetching emp name: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='app']/div[1]/div[2]/div[2]/div/div[2]/div/div[2]/div/div/div/p[1]"}
-  (Session info: chrome=142.0.7444.163)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+2025-12-01 21:27:50 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Starting beforeScenario setup...
+2025-12-01 21:27:50 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Properties loaded successfully.
+2025-12-01 21:27:50 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Driver is null — launching browser...
+2025-12-01 21:27:50 [INFO ] com.dlh.webdriver_manager.DriverManager [main] Launching browser: chrome
+2025-12-01 21:27:52 [INFO ] io.github.bonigarcia.wdm.WebDriverManager [main] Using chromedriver 142.0.7444.175 (resolved driver for Chrome 142)
+2025-12-01 21:27:52 [INFO ] io.github.bonigarcia.wdm.WebDriverManager [main] Exporting webdriver.chrome.driver as C:\Users\haris\.cache\selenium\chromedriver\win64\142.0.7444.175\chromedriver.exe
+2025-12-01 21:27:55 [INFO ] com.dlh.webdriver_manager.DriverManager [main] Exception occurred while launching browser: session not created: Chrome instance exited. Examine ChromeDriver verbose log to determine the cause.
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'HARISH', ip: '192.168.29.182', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.163, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\haris\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60834}, goog:processID: 6884, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9a37090c4859d09eaaf55ded83cdfea0
-*** Element info: {Using=xpath, value=//*[@id='app']/div[1]/div[2]/div[2]/div/div[2]/div/div[2]/div/div/div/p[1]}
-2025-11-19 20:33:26 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Starting beforeScenario setup...
-2025-11-19 20:33:26 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Properties loaded successfully.
-2025-11-19 20:33:26 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Driver already initialized — skipping browser launch.
-2025-11-19 20:33:29 [INFO ] com.dlh.step_definitions.VerifyPendingTimeSheets_Step_Def [main] the user clicks on the time option from the Menu bar
-2025-11-19 20:33:30 [ERROR] com.dlh.step_definitions.VerifyPendingTimeSheets_Step_Def [main] Error while entering name: no such element: Unable to locate element: {"method":"xpath","selector":"//input[contains(@placeholder,'Type for hints')]"}
-  (Session info: chrome=142.0.7444.163)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'HARISH', ip: '192.168.29.182', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.163, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\haris\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60834}, goog:processID: 6884, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9a37090c4859d09eaaf55ded83cdfea0
-*** Element info: {Using=xpath, value=//input[contains(@placeholder,'Type for hints')]}
-2025-11-19 20:33:30 [ERROR] com.dlh.step_definitions.VerifyPendingTimeSheets_Step_Def [main] Error while clicking on view button: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@type='submit']"}
-  (Session info: chrome=142.0.7444.163)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'HARISH', ip: '192.168.29.182', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.163, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\haris\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60834}, goog:processID: 6884, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9a37090c4859d09eaaf55ded83cdfea0
-*** Element info: {Using=xpath, value=//*[@type='submit']}
-2025-11-19 20:33:30 [INFO ] com.dlh.step_definitions.VerifyPendingTimeSheets_Step_Def [main] the user should see the message as There are no pending timesheets to approve
-2025-11-19 20:33:33 [ERROR] com.dlh.step_definitions.VerifyPendingTimeSheets_Step_Def [main] Error while fetching message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="app"]/div[1]/div[2]/div[2]/div/form/div[2]/div/div[1]/p"}
-  (Session info: chrome=142.0.7444.163)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'HARISH', ip: '192.168.29.182', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.163, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\haris\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60834}, goog:processID: 6884, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9a37090c4859d09eaaf55ded83cdfea0
-*** Element info: {Using=xpath, value=//*[@id="app"]/div[1]/div[2]/div[2]/div/form/div[2]/div/div[1]/p}
-2025-11-19 20:34:03 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Starting beforeScenario setup...
-2025-11-19 20:34:03 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Properties loaded successfully.
-2025-11-19 20:34:03 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Driver is null — launching browser...
-2025-11-19 20:34:03 [INFO ] com.dlh.webdriver_manager.DriverManager [main] Launching browser: chrome
-2025-11-19 20:34:03 [INFO ] io.github.bonigarcia.wdm.WebDriverManager [main] Using chromedriver 142.0.7444.175 (resolved driver for Chrome 142)
-2025-11-19 20:34:03 [INFO ] io.github.bonigarcia.wdm.WebDriverManager [main] Exporting webdriver.chrome.driver as C:\Users\haris\.cache\selenium\chromedriver\win64\142.0.7444.175\chromedriver.exe
-2025-11-19 20:34:05 [INFO ] com.dlh.webdriver_manager.DriverManager [main] Chrome browser launched successfully.
-2025-11-19 20:34:09 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Starting beforeScenario setup...
-2025-11-19 20:34:09 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Properties loaded successfully.
-2025-11-19 20:34:09 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Driver already initialized — skipping browser launch.
-2025-11-19 20:36:47 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Starting beforeScenario setup...
-2025-11-19 20:36:47 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Properties loaded successfully.
-2025-11-19 20:36:47 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Driver is null — launching browser...
-2025-11-19 20:36:47 [INFO ] com.dlh.webdriver_manager.DriverManager [main] Launching browser: chrome
-2025-11-19 20:36:47 [INFO ] io.github.bonigarcia.wdm.WebDriverManager [main] Using chromedriver 142.0.7444.175 (resolved driver for Chrome 142)
-2025-11-19 20:36:47 [INFO ] io.github.bonigarcia.wdm.WebDriverManager [main] Exporting webdriver.chrome.driver as C:\Users\haris\.cache\selenium\chromedriver\win64\142.0.7444.175\chromedriver.exe
-2025-11-19 20:36:49 [INFO ] com.dlh.webdriver_manager.DriverManager [main] Chrome browser launched successfully.
-2025-11-19 20:36:56 [INFO ] com.dlh.step_definitions.VerifyJobTitle_Step_Def [main] User is logged on successfully and is on Home Page
-2025-11-19 20:37:00 [INFO ] com.dlh.step_definitions.VerifyJobTitle_Step_Def [main] the user clicks on the directory option from the Menu bar
-2025-11-19 20:37:00 [INFO ] com.dlh.step_definitions.VerifyJobTitle_Step_Def [main] the user selects job title as CFO from the drop down
-2025-11-19 20:37:06 [INFO ] com.dlh.step_definitions.VerifyJobTitle_Step_Def [main] clicks the search button
-2025-11-19 20:37:07 [INFO ] com.dlh.step_definitions.VerifyJobTitle_Step_Def [main] the user should see the job title for Emp as {string}
-2025-11-19 20:37:07 [ERROR] com.dlh.step_definitions.VerifyJobTitle_Step_Def [main] Error while fetching emp name: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='app']/div[1]/div[2]/div[2]/div/div[2]/div/div[2]/div/div/div/p[1]"}
-  (Session info: chrome=142.0.7444.163)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'HARISH', ip: '192.168.29.182', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.163, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\haris\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61238}, goog:processID: 10112, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c2ec9d9e7a279b113e8a6394e82cfcbf
-*** Element info: {Using=xpath, value=//*[@id='app']/div[1]/div[2]/div[2]/div/div[2]/div/div[2]/div/div/div/p[1]}
-2025-11-19 20:37:07 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Starting beforeScenario setup...
-2025-11-19 20:37:07 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Properties loaded successfully.
-2025-11-19 20:37:07 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Driver already initialized — skipping browser launch.
-2025-11-19 20:37:11 [INFO ] com.dlh.step_definitions.VerifyPendingTimeSheets_Step_Def [main] the user clicks on the time option from the Menu bar
-2025-11-19 20:37:11 [ERROR] com.dlh.step_definitions.VerifyPendingTimeSheets_Step_Def [main] Error while entering name: no such element: Unable to locate element: {"method":"xpath","selector":"//input[contains(@placeholder,'Type for hints')]"}
-  (Session info: chrome=142.0.7444.163)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'HARISH', ip: '192.168.29.182', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.163, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\haris\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61238}, goog:processID: 10112, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c2ec9d9e7a279b113e8a6394e82cfcbf
-*** Element info: {Using=xpath, value=//input[contains(@placeholder,'Type for hints')]}
-2025-11-19 20:37:11 [ERROR] com.dlh.step_definitions.VerifyPendingTimeSheets_Step_Def [main] Error while clicking on view button: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@type='submit']"}
-  (Session info: chrome=142.0.7444.163)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'HARISH', ip: '192.168.29.182', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.163, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\haris\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61238}, goog:processID: 10112, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c2ec9d9e7a279b113e8a6394e82cfcbf
-*** Element info: {Using=xpath, value=//*[@type='submit']}
-2025-11-19 20:37:11 [INFO ] com.dlh.step_definitions.VerifyPendingTimeSheets_Step_Def [main] the user should see the message as There are no pending timesheets to approve
-2025-11-19 20:37:15 [ERROR] com.dlh.step_definitions.VerifyPendingTimeSheets_Step_Def [main] Error while fetching message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="app"]/div[1]/div[2]/div[2]/div/form/div[2]/div/div[1]/p"}
-  (Session info: chrome=142.0.7444.163)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'HARISH', ip: '192.168.29.182', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.163, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\haris\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61238}, goog:processID: 10112, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c2ec9d9e7a279b113e8a6394e82cfcbf
-*** Element info: {Using=xpath, value=//*[@id="app"]/div[1]/div[2]/div[2]/div/form/div[2]/div/div[1]/p}
-2025-11-19 20:43:09 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Starting beforeScenario setup...
-2025-11-19 20:43:09 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Properties loaded successfully.
-2025-11-19 20:43:09 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Driver is null — launching browser...
-2025-11-19 20:43:09 [INFO ] com.dlh.webdriver_manager.DriverManager [main] Launching browser: chrome
-2025-11-19 20:43:10 [INFO ] io.github.bonigarcia.wdm.WebDriverManager [main] Using chromedriver 142.0.7444.175 (resolved driver for Chrome 142)
-2025-11-19 20:43:10 [INFO ] io.github.bonigarcia.wdm.WebDriverManager [main] Exporting webdriver.chrome.driver as C:\Users\haris\.cache\selenium\chromedriver\win64\142.0.7444.175\chromedriver.exe
-2025-11-19 20:43:13 [INFO ] com.dlh.webdriver_manager.DriverManager [main] Chrome browser launched successfully.
-2025-11-19 20:43:21 [INFO ] com.dlh.step_definitions.VerifyJobTitle_Step_Def [main] User is logged on successfully and is on Home Page
-2025-11-19 20:43:25 [INFO ] com.dlh.step_definitions.VerifyJobTitle_Step_Def [main] the user clicks on the directory option from the Menu bar
-2025-11-19 20:43:25 [INFO ] com.dlh.step_definitions.VerifyJobTitle_Step_Def [main] the user selects job title as CFO from the drop down
-2025-11-19 20:43:31 [INFO ] com.dlh.step_definitions.VerifyJobTitle_Step_Def [main] clicks the search button
-2025-11-19 20:43:31 [INFO ] com.dlh.step_definitions.VerifyJobTitle_Step_Def [main] the user should see the job title for Emp as {string}
-2025-11-19 20:43:32 [ERROR] com.dlh.step_definitions.VerifyJobTitle_Step_Def [main] Error while fetching emp name: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='app']/div[1]/div[2]/div[2]/div/div[2]/div/div[2]/div/div/div/p[1]"}
-  (Session info: chrome=142.0.7444.163)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'HARISH', ip: '192.168.29.182', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.163, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\haris\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53758}, goog:processID: 17040, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8d7900f2969d39c1269b40340925d028
-*** Element info: {Using=xpath, value=//*[@id='app']/div[1]/div[2]/div[2]/div/div[2]/div/div[2]/div/div/div/p[1]}
-2025-11-19 20:43:32 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Starting beforeScenario setup...
-2025-11-19 20:43:32 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Properties loaded successfully.
-2025-11-19 20:43:32 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Driver already initialized — skipping browser launch.
-2025-11-19 20:43:36 [INFO ] com.dlh.step_definitions.VerifyPendingTimeSheets_Step_Def [main] the user clicks on the time option from the Menu bar
-2025-11-19 20:43:39 [INFO ] com.dlh.step_definitions.VerifyPendingTimeSheets_Step_Def [main] the user enters the name as Thomas Kutty Benny
-2025-11-19 20:43:40 [INFO ] com.dlh.step_definitions.VerifyPendingTimeSheets_Step_Def [main] clicks on the view button
-2025-11-19 20:43:40 [INFO ] com.dlh.step_definitions.VerifyPendingTimeSheets_Step_Def [main] the user should see the message as There are no pending timesheets to approve
-2025-11-19 20:43:43 [ERROR] com.dlh.step_definitions.VerifyPendingTimeSheets_Step_Def [main] Error while fetching message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="app"]/div[1]/div[2]/div[2]/div/form/div[2]/div/div[1]/p"}
-  (Session info: chrome=142.0.7444.163)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'HARISH', ip: '192.168.29.182', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.163, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\haris\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53758}, goog:processID: 17040, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8d7900f2969d39c1269b40340925d028
-*** Element info: {Using=xpath, value=//*[@id="app"]/div[1]/div[2]/div[2]/div/form/div[2]/div/div[1]/p}
-2025-11-19 20:44:34 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Starting beforeScenario setup...
-2025-11-19 20:44:34 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Properties loaded successfully.
-2025-11-19 20:44:34 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Driver is null — launching browser...
-2025-11-19 20:44:34 [INFO ] com.dlh.webdriver_manager.DriverManager [main] Launching browser: chrome
-2025-11-19 20:44:35 [INFO ] io.github.bonigarcia.wdm.WebDriverManager [main] Using chromedriver 142.0.7444.175 (resolved driver for Chrome 142)
-2025-11-19 20:44:35 [INFO ] io.github.bonigarcia.wdm.WebDriverManager [main] Exporting webdriver.chrome.driver as C:\Users\haris\.cache\selenium\chromedriver\win64\142.0.7444.175\chromedriver.exe
-2025-11-19 20:44:36 [INFO ] com.dlh.webdriver_manager.DriverManager [main] Chrome browser launched successfully.
-2025-11-19 20:44:46 [INFO ] com.dlh.step_definitions.VerifyJobTitle_Step_Def [main] the user clicks on the directory option from the Menu bar
-2025-11-19 20:44:46 [INFO ] com.dlh.step_definitions.VerifyJobTitle_Step_Def [main] the user selects job title as CFO from the drop down
-2025-11-19 20:44:52 [INFO ] com.dlh.step_definitions.VerifyJobTitle_Step_Def [main] clicks the search button
-2025-11-19 20:44:53 [INFO ] com.dlh.step_definitions.VerifyJobTitle_Step_Def [main] the user should see the job title for Emp as {string}
-2025-11-19 20:44:53 [ERROR] com.dlh.step_definitions.VerifyJobTitle_Step_Def [main] Error while fetching emp name: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='app']/div[1]/div[2]/div[2]/div/div[2]/div/div[2]/div/div/div/p[1]"}
-  (Session info: chrome=142.0.7444.163)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'HARISH', ip: '192.168.29.182', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.163, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\haris\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57526}, goog:processID: 18356, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: db23b1e60be70e9d37e89bca18db1a08
-*** Element info: {Using=xpath, value=//*[@id='app']/div[1]/div[2]/div[2]/div/div[2]/div/div[2]/div/div/div/p[1]}
-2025-11-19 20:44:53 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Starting beforeScenario setup...
-2025-11-19 20:44:53 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Properties loaded successfully.
-2025-11-19 20:44:53 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Driver already initialized — skipping browser launch.
-2025-11-19 20:44:57 [INFO ] com.dlh.step_definitions.VerifyPendingTimeSheets_Step_Def [main] the user clicks on the time option from the Menu bar
-2025-11-19 20:45:04 [INFO ] com.dlh.step_definitions.VerifyPendingTimeSheets_Step_Def [main] the user enters the name as Thomas Kutty Benny
-2025-11-19 20:45:04 [INFO ] com.dlh.step_definitions.VerifyPendingTimeSheets_Step_Def [main] clicks on the view button
-2025-11-19 20:45:04 [INFO ] com.dlh.step_definitions.VerifyPendingTimeSheets_Step_Def [main] the user should see the message as There are no pending timesheets to approve
-2025-11-19 20:45:07 [INFO ] com.dlh.step_definitions.VerifyPendingTimeSheets_Step_Def [main] The expected message is displayed: No Timesheets Found
-2025-11-19 20:46:43 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Starting beforeScenario setup...
-2025-11-19 20:46:43 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Properties loaded successfully.
-2025-11-19 20:46:43 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Driver is null — launching browser...
-2025-11-19 20:46:43 [INFO ] com.dlh.webdriver_manager.DriverManager [main] Launching browser: chrome
-2025-11-19 20:46:44 [INFO ] io.github.bonigarcia.wdm.WebDriverManager [main] Using chromedriver 142.0.7444.175 (resolved driver for Chrome 142)
-2025-11-19 20:46:44 [INFO ] io.github.bonigarcia.wdm.WebDriverManager [main] Exporting webdriver.chrome.driver as C:\Users\haris\.cache\selenium\chromedriver\win64\142.0.7444.175\chromedriver.exe
-2025-11-19 20:46:45 [INFO ] com.dlh.webdriver_manager.DriverManager [main] Chrome browser launched successfully.
-2025-11-19 20:46:53 [INFO ] com.dlh.step_definitions.VerifyJobTitle_Step_Def [main] User is logged on successfully and is on Home Page
-2025-11-19 20:46:56 [INFO ] com.dlh.step_definitions.VerifyJobTitle_Step_Def [main] the user clicks on the directory option from the Menu bar
-2025-11-19 20:46:56 [INFO ] com.dlh.step_definitions.VerifyJobTitle_Step_Def [main] the user selects job title as CFO from the drop down
-2025-11-19 20:47:03 [INFO ] com.dlh.step_definitions.VerifyJobTitle_Step_Def [main] clicks the search button
-2025-11-19 20:47:03 [INFO ] com.dlh.step_definitions.VerifyJobTitle_Step_Def [main] the user should see the job title for Emp as {string}
-2025-11-19 20:47:03 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Starting beforeScenario setup...
-2025-11-19 20:47:03 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Properties loaded successfully.
-2025-11-19 20:47:03 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Driver already initialized — skipping browser launch.
-2025-11-19 20:47:08 [INFO ] com.dlh.step_definitions.VerifyPendingTimeSheets_Step_Def [main] the user clicks on the time option from the Menu bar
-2025-11-19 20:47:12 [INFO ] com.dlh.step_definitions.VerifyPendingTimeSheets_Step_Def [main] the user enters the name as Thomas Kutty Benny
-2025-11-19 20:47:12 [INFO ] com.dlh.step_definitions.VerifyPendingTimeSheets_Step_Def [main] clicks on the view button
-2025-11-19 20:47:12 [INFO ] com.dlh.step_definitions.VerifyPendingTimeSheets_Step_Def [main] the user should see the message as There are no pending timesheets to approve
-2025-11-19 20:47:15 [ERROR] com.dlh.step_definitions.VerifyPendingTimeSheets_Step_Def [main] Error while fetching message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="app"]/div[1]/div[2]/div[2]/div/form/div[2]/div/div[1]/p"}
-  (Session info: chrome=142.0.7444.163)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'HARISH', ip: '192.168.29.182', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.163, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\haris\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54062}, goog:processID: 9004, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f70bc68eeab80c4198e2802d40093d13
-*** Element info: {Using=xpath, value=//*[@id="app"]/div[1]/div[2]/div[2]/div/form/div[2]/div/div[1]/p}
-2025-11-19 20:49:17 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Starting beforeScenario setup...
-2025-11-19 20:49:17 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Properties loaded successfully.
-2025-11-19 20:49:17 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Driver is null — launching browser...
-2025-11-19 20:49:17 [INFO ] com.dlh.webdriver_manager.DriverManager [main] Launching browser: chrome
-2025-11-19 20:49:18 [INFO ] io.github.bonigarcia.wdm.WebDriverManager [main] Using chromedriver 142.0.7444.175 (resolved driver for Chrome 142)
-2025-11-19 20:49:18 [INFO ] io.github.bonigarcia.wdm.WebDriverManager [main] Exporting webdriver.chrome.driver as C:\Users\haris\.cache\selenium\chromedriver\win64\142.0.7444.175\chromedriver.exe
-2025-11-19 20:49:19 [INFO ] com.dlh.webdriver_manager.DriverManager [main] Chrome browser launched successfully.
-2025-11-19 20:49:30 [INFO ] com.dlh.step_definitions.VerifyJobTitle_Step_Def [main] the user clicks on the directory option from the Menu bar
-2025-11-19 20:49:30 [INFO ] com.dlh.step_definitions.VerifyJobTitle_Step_Def [main] the user selects job title as CFO from the drop down
-2025-11-19 20:49:37 [INFO ] com.dlh.step_definitions.VerifyJobTitle_Step_Def [main] clicks the search button
-2025-11-19 20:49:37 [INFO ] com.dlh.step_definitions.VerifyJobTitle_Step_Def [main] the user should see the job title for Emp as {string}
-2025-11-19 20:49:38 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Starting beforeScenario setup...
-2025-11-19 20:49:38 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Properties loaded successfully.
-2025-11-19 20:49:38 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Driver already initialized — skipping browser launch.
-2025-11-19 20:49:42 [INFO ] com.dlh.step_definitions.VerifyPendingTimeSheets_Step_Def [main] the user clicks on the time option from the Menu bar
-2025-11-19 20:49:45 [INFO ] com.dlh.step_definitions.VerifyPendingTimeSheets_Step_Def [main] the user enters the name as Thomas Kutty Benny
-2025-11-19 20:49:46 [INFO ] com.dlh.step_definitions.VerifyPendingTimeSheets_Step_Def [main] clicks on the view button
-2025-11-19 20:49:46 [INFO ] com.dlh.step_definitions.VerifyPendingTimeSheets_Step_Def [main] the user should see the message as There are no pending timesheets to approve
-2025-11-19 20:49:49 [ERROR] com.dlh.step_definitions.VerifyPendingTimeSheets_Step_Def [main] Error while fetching message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="app"]/div[1]/div[2]/div[2]/div/form/div[2]/div/div[1]/p"}
-  (Session info: chrome=142.0.7444.163)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'HARISH', ip: '192.168.29.182', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.163, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\haris\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50097}, goog:processID: 3380, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0244b24c17c0eadbb94518ad35b268e3
-*** Element info: {Using=xpath, value=//*[@id="app"]/div[1]/div[2]/div[2]/div/form/div[2]/div/div[1]/p}
-2025-11-19 20:52:10 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Starting beforeScenario setup...
-2025-11-19 20:52:10 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Properties loaded successfully.
-2025-11-19 20:52:10 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Driver is null — launching browser...
-2025-11-19 20:52:10 [INFO ] com.dlh.webdriver_manager.DriverManager [main] Launching browser: chrome
-2025-11-19 20:52:10 [INFO ] io.github.bonigarcia.wdm.WebDriverManager [main] Using chromedriver 142.0.7444.175 (resolved driver for Chrome 142)
-2025-11-19 20:52:10 [INFO ] io.github.bonigarcia.wdm.WebDriverManager [main] Exporting webdriver.chrome.driver as C:\Users\haris\.cache\selenium\chromedriver\win64\142.0.7444.175\chromedriver.exe
-2025-11-19 20:52:11 [INFO ] com.dlh.webdriver_manager.DriverManager [main] Chrome browser launched successfully.
-2025-11-19 20:52:19 [INFO ] com.dlh.step_definitions.VerifyJobTitle_Step_Def [main] User is logged on successfully and is on Home Page
-2025-11-19 20:52:23 [INFO ] com.dlh.step_definitions.VerifyJobTitle_Step_Def [main] the user clicks on the directory option from the Menu bar
-2025-11-19 20:52:23 [INFO ] com.dlh.step_definitions.VerifyJobTitle_Step_Def [main] the user selects job title as CFO from the drop down
-2025-11-19 20:52:30 [INFO ] com.dlh.step_definitions.VerifyJobTitle_Step_Def [main] clicks the search button
-2025-11-19 20:52:30 [INFO ] com.dlh.step_definitions.VerifyJobTitle_Step_Def [main] the user should see the job title for Emp as {string}
-2025-11-19 21:00:00 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Starting beforeScenario setup...
-2025-11-19 21:00:00 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Properties loaded successfully.
-2025-11-19 21:00:00 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Driver is null — launching browser...
-2025-11-19 21:00:00 [INFO ] com.dlh.webdriver_manager.DriverManager [main] Launching browser: chrome
-2025-11-19 21:00:00 [INFO ] io.github.bonigarcia.wdm.WebDriverManager [main] Using chromedriver 142.0.7444.175 (resolved driver for Chrome 142)
-2025-11-19 21:00:00 [INFO ] io.github.bonigarcia.wdm.WebDriverManager [main] Exporting webdriver.chrome.driver as C:\Users\haris\.cache\selenium\chromedriver\win64\142.0.7444.175\chromedriver.exe
-2025-11-19 21:00:01 [INFO ] com.dlh.webdriver_manager.DriverManager [main] Chrome browser launched successfully.
-2025-11-19 21:00:01 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Executing login...
-2025-11-19 21:00:08 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Browser launched and user logged in successfully.
-2025-11-19 21:00:09 [INFO ] com.dlh.step_definitions.VerifyJobTitle_Step_Def [main] User is logged on successfully and is on Home Page
-2025-11-19 21:00:13 [INFO ] com.dlh.step_definitions.VerifyJobTitle_Step_Def [main] the user clicks on the directory option from the Menu bar
-2025-11-19 21:00:13 [INFO ] com.dlh.step_definitions.VerifyJobTitle_Step_Def [main] the user selects job title as CFO from the drop down
-2025-11-19 21:00:19 [INFO ] com.dlh.step_definitions.VerifyJobTitle_Step_Def [main] clicks the search button
-2025-11-19 21:00:19 [INFO ] com.dlh.step_definitions.VerifyJobTitle_Step_Def [main] the user should see the job title for Emp as {string}
-2025-11-19 21:00:22 [INFO ] com.dlh.step_definitions.VerifyJobTitle_Step_Def [main] EMP Name matches
-2025-11-19 21:35:42 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Starting beforeScenario setup...
-2025-11-19 21:35:42 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Properties loaded successfully.
-2025-11-19 21:35:42 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Driver is null — launching browser...
-2025-11-19 21:35:42 [INFO ] com.dlh.webdriver_manager.DriverManager [main] Launching browser: chrome
-2025-11-19 21:35:43 [INFO ] io.github.bonigarcia.wdm.WebDriverManager [main] Using chromedriver 142.0.7444.175 (resolved driver for Chrome 142)
-2025-11-19 21:35:43 [INFO ] io.github.bonigarcia.wdm.WebDriverManager [main] Exporting webdriver.chrome.driver as C:\Users\haris\.cache\selenium\chromedriver\win64\142.0.7444.175\chromedriver.exe
-2025-11-19 21:35:44 [INFO ] com.dlh.webdriver_manager.DriverManager [main] Chrome browser launched successfully.
-2025-11-19 21:35:45 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Executing login...
-2025-11-19 21:35:49 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Browser launched and user logged in successfully.
-2025-11-19 21:37:22 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Starting beforeScenario setup...
-2025-11-19 21:37:22 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Properties loaded successfully.
-2025-11-19 21:37:22 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Driver is null — launching browser...
-2025-11-19 21:37:22 [INFO ] com.dlh.webdriver_manager.DriverManager [main] Launching browser: chrome
-2025-11-19 21:37:22 [INFO ] io.github.bonigarcia.wdm.WebDriverManager [main] Using chromedriver 142.0.7444.175 (resolved driver for Chrome 142)
-2025-11-19 21:37:22 [INFO ] io.github.bonigarcia.wdm.WebDriverManager [main] Exporting webdriver.chrome.driver as C:\Users\haris\.cache\selenium\chromedriver\win64\142.0.7444.175\chromedriver.exe
-2025-11-19 21:37:23 [INFO ] com.dlh.webdriver_manager.DriverManager [main] Chrome browser launched successfully.
-2025-11-19 21:37:23 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Executing login...
-2025-11-19 21:37:27 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Browser launched and user logged in successfully.
-2025-11-19 21:40:58 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Starting beforeScenario setup...
-2025-11-19 21:40:58 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Properties loaded successfully.
-2025-11-19 21:40:58 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Driver is null — launching browser...
-2025-11-19 21:40:58 [INFO ] com.dlh.webdriver_manager.DriverManager [main] Launching browser: chrome
-2025-11-19 21:40:59 [INFO ] io.github.bonigarcia.wdm.WebDriverManager [main] Using chromedriver 142.0.7444.175 (resolved driver for Chrome 142)
-2025-11-19 21:40:59 [INFO ] io.github.bonigarcia.wdm.WebDriverManager [main] Exporting webdriver.chrome.driver as C:\Users\haris\.cache\selenium\chromedriver\win64\142.0.7444.175\chromedriver.exe
-2025-11-19 21:41:00 [INFO ] com.dlh.webdriver_manager.DriverManager [main] Chrome browser launched successfully.
-2025-11-19 21:41:00 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Executing login...
-2025-11-19 21:41:04 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Browser launched and user logged in successfully.
-2025-11-19 21:41:07 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Starting beforeScenario setup...
-2025-11-19 21:41:07 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Properties loaded successfully.
-2025-11-19 21:41:07 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Driver already initialized — skipping browser launch.
-2025-11-19 21:43:05 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Starting beforeScenario setup...
-2025-11-19 21:43:05 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Properties loaded successfully.
-2025-11-19 21:43:05 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Driver is null — launching browser...
-2025-11-19 21:43:05 [INFO ] com.dlh.webdriver_manager.DriverManager [main] Launching browser: chrome
-2025-11-19 21:43:06 [INFO ] io.github.bonigarcia.wdm.WebDriverManager [main] Using chromedriver 142.0.7444.175 (resolved driver for Chrome 142)
-2025-11-19 21:43:06 [INFO ] io.github.bonigarcia.wdm.WebDriverManager [main] Exporting webdriver.chrome.driver as C:\Users\haris\.cache\selenium\chromedriver\win64\142.0.7444.175\chromedriver.exe
-2025-11-19 21:43:07 [INFO ] com.dlh.webdriver_manager.DriverManager [main] Chrome browser launched successfully.
-2025-11-19 21:43:07 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Executing login...
-2025-11-19 21:43:13 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Browser launched and user logged in successfully.
-2025-11-19 21:43:14 [INFO ] com.dlh.step_definitions.VerifyJobTitle_Step_Def [main] User is logged on successfully and is on Home Page
-2025-11-19 21:43:17 [INFO ] com.dlh.step_definitions.VerifyJobTitle_Step_Def [main] the user clicks on the directory option from the Menu bar
-2025-11-19 21:43:17 [INFO ] com.dlh.step_definitions.VerifyJobTitle_Step_Def [main] the user selects job title as CFO from the drop down
-2025-11-19 21:43:24 [INFO ] com.dlh.step_definitions.VerifyJobTitle_Step_Def [main] clicks the search button
-2025-11-19 21:43:24 [INFO ] com.dlh.step_definitions.VerifyJobTitle_Step_Def [main] the user should see the job title for Emp as {string}
-2025-11-19 21:43:27 [INFO ] com.dlh.step_definitions.VerifyJobTitle_Step_Def [main] EMP Name matches
-2025-11-19 21:43:27 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Starting beforeScenario setup...
-2025-11-19 21:43:27 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Properties loaded successfully.
-2025-11-19 21:43:27 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Driver already initialized — skipping browser launch.
-2025-11-19 21:43:32 [INFO ] com.dlh.step_definitions.VerifyPendingTimeSheets_Step_Def [main] the user clicks on the time option from the Menu bar
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Symbols not available. Dumping unresolved backtrace:
+	0x7ff635bfa235
+	0x7ff635952630
+	0x7ff6356e16dd
+	0x7ff6357204a5
+	0x7ff63571bc03
+	0x7ff635770bc2
+	0x7ff635770400
+	0x7ff63572b0ed
+	0x7ff63572bf63
+	0x7ff635c25d60
+	0x7ff635c1fe8a
+	0x7ff635c41005
+	0x7ff63596d71e
+	0x7ff635974e1f
+	0x7ff63595b7c4
+	0x7ff63595b97f
+	0x7ff6359418e8
+	0x7ffd83e4e8d7
+	0x7ffd8532c53c
+
+2025-12-01 21:27:55 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Executing login...
+2025-12-01 21:27:55 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Exception occurred in beforeScenario: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because the return value of "com.dlh.webdriver_manager.DriverManager.getDriver()" is null
+2025-12-01 21:27:56 [ERROR] com.dlh.step_definitions.VerifyJobTitle_Step_Def [main] Error while logging in: Cannot invoke "org.openqa.selenium.WebDriver.getCurrentUrl()" because the return value of "com.dlh.webdriver_manager.DriverManager.getDriver()" is null
+2025-12-01 21:27:56 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Attaching screenshot for scenario: This test is to verify job title for Employee
+2025-12-01 21:27:59 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Attaching screenshot for scenario: This test is to verify job title for Employee
+2025-12-01 21:27:59 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Starting beforeScenario setup...
+2025-12-01 21:27:59 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Properties loaded successfully.
+2025-12-01 21:27:59 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Driver is null — launching browser...
+2025-12-01 21:27:59 [INFO ] com.dlh.webdriver_manager.DriverManager [main] Launching browser: chrome
+2025-12-01 21:27:59 [INFO ] io.github.bonigarcia.wdm.WebDriverManager [main] Using chromedriver 142.0.7444.175 (resolved driver for Chrome 142)
+2025-12-01 21:27:59 [INFO ] io.github.bonigarcia.wdm.WebDriverManager [main] Exporting webdriver.chrome.driver as C:\Users\haris\.cache\selenium\chromedriver\win64\142.0.7444.175\chromedriver.exe
+2025-12-01 21:28:01 [INFO ] com.dlh.webdriver_manager.DriverManager [main] Chrome browser launched successfully.
+2025-12-01 21:28:01 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Executing login...
+2025-12-01 21:28:07 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Browser launched and user logged in successfully.
+2025-12-01 21:28:07 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Attaching screenshot for scenario: This test is to verify the pending timesheet
+2025-12-01 21:28:10 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Attaching screenshot for scenario: This test is to verify the pending timesheet
+2025-12-01 21:29:32 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Starting beforeScenario setup...
+2025-12-01 21:29:32 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Properties loaded successfully.
+2025-12-01 21:29:32 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Driver is null — launching browser...
+2025-12-01 21:29:32 [INFO ] com.dlh.webdriver_manager.DriverManager [main] Launching browser: chrome
+2025-12-01 21:29:33 [INFO ] io.github.bonigarcia.wdm.WebDriverManager [main] Using chromedriver 142.0.7444.175 (resolved driver for Chrome 142)
+2025-12-01 21:29:33 [INFO ] io.github.bonigarcia.wdm.WebDriverManager [main] Exporting webdriver.chrome.driver as C:\Users\haris\.cache\selenium\chromedriver\win64\142.0.7444.175\chromedriver.exe
+2025-12-01 21:29:34 [INFO ] com.dlh.webdriver_manager.DriverManager [main] Chrome browser launched successfully.
+2025-12-01 21:29:34 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Executing login...
+2025-12-01 21:29:40 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Browser launched and user logged in successfully.
+2025-12-01 21:29:41 [INFO ] com.dlh.step_definitions.VerifyJobTitle_Step_Def [main] User is logged on successfully and is on Home Page
+2025-12-01 21:29:41 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Attaching screenshot for scenario: This test is to verify job title for Employee
+2025-12-01 21:29:45 [INFO ] com.dlh.step_definitions.VerifyJobTitle_Step_Def [main] the user clicks on the directory option from the Menu bar
+2025-12-01 21:29:45 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Attaching screenshot for scenario: This test is to verify job title for Employee
+2025-12-01 21:29:45 [INFO ] com.dlh.step_definitions.VerifyJobTitle_Step_Def [main] the user selects job title as CFO from the drop down
+2025-12-01 21:29:51 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Attaching screenshot for scenario: This test is to verify job title for Employee
+2025-12-01 21:29:51 [INFO ] com.dlh.step_definitions.VerifyJobTitle_Step_Def [main] clicks the search button
+2025-12-01 21:29:51 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Attaching screenshot for scenario: This test is to verify job title for Employee
+2025-12-01 21:29:52 [INFO ] com.dlh.step_definitions.VerifyJobTitle_Step_Def [main] the user should see the job title for Emp as {string}
+2025-12-01 21:29:55 [INFO ] com.dlh.step_definitions.VerifyJobTitle_Step_Def [main] EMP Name matches
+2025-12-01 21:29:55 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Attaching screenshot for scenario: This test is to verify job title for Employee
+2025-12-01 21:29:55 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Starting beforeScenario setup...
+2025-12-01 21:29:55 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Properties loaded successfully.
+2025-12-01 21:29:55 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Driver already initialized — skipping browser launch.
+2025-12-01 21:29:55 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Attaching screenshot for scenario: This test is to verify the pending timesheet
+2025-12-01 21:29:59 [INFO ] com.dlh.step_definitions.VerifyPendingTimeSheets_Step_Def [main] the user clicks on the time option from the Menu bar
+2025-12-01 21:29:59 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Attaching screenshot for scenario: This test is to verify the pending timesheet
+2025-12-01 21:30:05 [INFO ] com.dlh.step_definitions.VerifyPendingTimeSheets_Step_Def [main] the user enters the name as Thomas Kutty Benny
+2025-12-01 21:30:05 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Attaching screenshot for scenario: This test is to verify the pending timesheet
+2025-12-01 21:30:06 [INFO ] com.dlh.step_definitions.VerifyPendingTimeSheets_Step_Def [main] clicks on the view button
+2025-12-01 21:30:06 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Attaching screenshot for scenario: This test is to verify the pending timesheet
+2025-12-01 21:30:06 [INFO ] com.dlh.step_definitions.VerifyPendingTimeSheets_Step_Def [main] the user should see the message as There are no pending timesheets to approve
+2025-12-01 21:30:09 [INFO ] com.dlh.step_definitions.VerifyPendingTimeSheets_Step_Def [main] The expected message is displayed: No Timesheets Found
+2025-12-01 21:30:09 [INFO ] com.dlh.step_definitions.Common_Step_Def [main] Attaching screenshot for scenario: This test is to verify the pending timesheet

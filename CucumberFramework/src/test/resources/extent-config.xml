@@ -1,0 +1,10 @@
+<extentreports>
+    <configuration>
+        <theme>DARK</theme>
+        <encoding>UTF-8</encoding>
+        <protocol>HTTPS</protocol>
+        <timelineEnabled>true</timelineEnabled>
+        <documentTitle>Automation Test Report</documentTitle>
+        <reportName>Cucumber BDD Execution</reportName>
+    </configuration>
+</extentreports>

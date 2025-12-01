@@ -60,7 +60,6 @@ public class LoginPage {
 			}
 	    }
 	}
-
 	public void enterPassword(String password) {
 	    try {
 	    	CommonUtils.getInstance().highlightWebElement(driver.findElement(PASSWORD));

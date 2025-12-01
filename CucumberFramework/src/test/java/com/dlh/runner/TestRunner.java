@@ -10,8 +10,14 @@ import io.cucumber.junit.CucumberOptions;
 					glue = "com.dlh.step_definitions",
 					dryRun = false,
 					monochrome = true,
-					plugin = {"rerun:target/failed_scenarios.txt"
-							 })
+					plugin = {"rerun:target/failed_scenarios.txt",
+							  "pretty",
+							  "html:target/cucumber-reports.html",
+							  "json:target/cucumber-reports.json",
+							  "junit:target/cucumber-reports.xml",
+							  "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
+							  "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"}
+							 )
 public class TestRunner {
 	
 

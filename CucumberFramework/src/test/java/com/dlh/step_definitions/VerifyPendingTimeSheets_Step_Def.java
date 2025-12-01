@@ -43,7 +43,7 @@ public class VerifyPendingTimeSheets_Step_Def {
 	    	LOGGER.info("the user clicks on the time option from the Menu bar");
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
-			CommonUtils.getInstance().takeScreenshot();
+			//CommonUtils.getInstance().takeScreenshot();
 			LOGGER.error("Error while clicking on time option: " + e.getMessage());
 		}  
     }
@@ -60,7 +60,7 @@ public class VerifyPendingTimeSheets_Step_Def {
 			LOGGER.info("the user enters the name as Thomas Kutty Benny");	
 		} catch (Exception e) {
 			// TODO: handle exception
-			CommonUtils.getInstance().takeScreenshot();
+			//CommonUtils.getInstance().takeScreenshot();
 			LOGGER.error("Error while entering name: " + e.getMessage());
 		}
     }
@@ -72,7 +72,7 @@ public class VerifyPendingTimeSheets_Step_Def {
     	   LOGGER.info("clicks on the view button");
 	} catch (Exception e) {
 		// TODO: handle exception
-		CommonUtils.getInstance().takeScreenshot();
+		//CommonUtils.getInstance().takeScreenshot();
 		LOGGER.error("Error while clicking on view button: " + e.getMessage());
 	}
     }
@@ -89,7 +89,7 @@ public class VerifyPendingTimeSheets_Step_Def {
 				LOGGER.error("The expected message is NOT displayed. Actual message: " + actualMessage);
 			}
     } catch (Exception e) {
-    	CommonUtils.getInstance().takeScreenshot();
+    	//CommonUtils.getInstance().takeScreenshot();
     	LOGGER.error("Error while fetching message: " + e.getMessage());
     }
     }

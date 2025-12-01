@@ -2,6 +2,8 @@ package com.dlh.step_definitions;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -11,6 +13,7 @@ import com.dlh.utilities.CommonUtils;
 import com.dlh.webdriver_manager.DriverManager;
 import com.lao.constants.Constants;
 
+import io.cucumber.java.AfterStep;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 
@@ -56,5 +59,14 @@ public class Common_Step_Def {
 			LoginPage.getInstance().enterUserName(Constants.USERNAME);
 			LoginPage.getInstance().enterPassword(Constants.PASSWORD);
 			LoginPage.getInstance().clickSubmit();
+	}
+	
+	@AfterStep
+	public void attach_screenshot(Scenario scenario) {
+		LOGGER.info("Attaching screenshot for scenario: " + scenario.getName());
+		if (scenario.isFailed()) {
+			final byte[] screenshot = ((TakesScreenshot) DriverManager.getDriver()).getScreenshotAs(OutputType.BYTES);
+			scenario.attach(screenshot, "image/png", "Error Screenshot");
+		}
 	}
 }
